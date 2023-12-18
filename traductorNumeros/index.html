@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/styles.css">
+    <title>Traductor de Numeros</title>
+</head>
+
+<body>
+    <div class="container">
+        <h3 class="text-center">NUMBERS TO TEXT TRANSLATOR</h3>
+        <h3 class="text-center">TRADUCTOR - DE NUMEROS A TEXTO</h3>
+
+        <div class="col-md-8 offset-md-2 col-sm-10 offset-sm-1 my-3 p-3 text-center">
+            <form action="">
+                <div class="form-group mb-3">
+                    <label class="form-label strong" for="input">Number / Numero (Max 999)</label>
+                    <div class="col-md-4 offset-md-4 text-center">
+                        <input class="form-control" type="number" id="input">
+                    </div>
+                </div>
+                <button id="escribir" class="btn btn-success" type="submit">OK</button>
+                <button id="reset" class="btn btn-warning" type="submit">Reset</button>
+            </form>
+        </div>
+
+        <div class="col-md-8 offset-md-2 border p-3 mt-2 rounded">
+            <h4>ENGLISH</h4>
+            <p>The typed number is:</p>
+            <h5 class="text-center">
+                <i id="english">
+                    Here you will see the typed number in letters
+                </i>
+            </h5>
+        </div>
+
+        <div class="col-md-8 offset-md-2 border p-3 mt-2 rounded">
+            <h4>ESPAÑOL</h4>
+            <p>El numero ingresado es:</p>
+            <h5 class="text-center">
+                <i id="espanol">
+                    Aqui verá el número en letras
+                </i>
+            </h5>
+        </div>
+
+    </div>
+
+    <script src="js/app.js"></script>
+</body>
+
+</html>
